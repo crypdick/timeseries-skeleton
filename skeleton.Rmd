@@ -1,6 +1,6 @@
 ---
 title: "TimeSeries Skeleton"
-author: "Michael McCormack"
+author: "Richard Decal"
 date: "March 12, 2018"
 output: pdf_document
 ---
