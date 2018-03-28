@@ -65,6 +65,7 @@ __Hints__
 * good StackOverflow reference for moving average in R: https://stackoverflow.com/questions/743812/calculating-moving-average
 * watch out for functions that may have been masked by other packages
 * ggplot: may need to convert data to long format to plot mutliple series  
+
 ```{r}
 #TODO
 
@@ -106,7 +107,8 @@ plot(AirPassengers)
 ## Step 7: Compute the Moving Average of this data using forecast package and vizualize this  
 
 ```{r}
-air_pass_ma <- forecast::ma(AirPassengers, order=1)
+air_pass_ma <- forecast::ma(AirPassengers, order=12)
+plot(as.ts(air_pass_ma))
 ```
 
 ## Step 9: Create a decomposition of the data by month  
